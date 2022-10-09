@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form method="post">
+      <fieldset>
+        <label for="name">Enter Your Full Name: <input id="name" name="name" type="text" required /></label>
+        <label for="pronoun">Enter your pronoun: <input id="pronoun" name="pronoun" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="grad_year">Input your expected graduation year: <input id="grad_year" type="number" name="age" /></label>
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">DA Hacks</option>
+            <option value="2">DA Hacks</option>
+            <option value="3">DA Hacks</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      </fieldset>
+      <p>The questionaires below are optional</p>
+      <fieldset>
+        <label for="major">Enter Your Major: <input id="major" name="major" type="text" /></label>
+        <label for="fun_fact">Enter Your Fun Fact: <input id="fun_fact" name="fun_fact" type="text" /></label>
+        <label for="quarter">Enter Your Start Quarter: <input id="quarter" name="quarter" type="text" /></label>
+        <label for="hobbies">Enter Your Hobbies: <input id="hobbies" name="hobbies" type="text" /></label>
+        <label for="food">Enter Your Favorite Foods: <input id="food" name="food" type="text" /></label>
+        <label for="clubs">Enter Your Clubs: <input id="clubs" name="clubs" type="text" /></label>
+        <label for="res">Enter Your Favorite Restaurants: <input id="res" name="res" type="text" /></label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
